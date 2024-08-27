@@ -186,6 +186,7 @@ flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     gap:18px;
+    padding-top:46px;
 }
 .main-page__logo-container{
     justify-content: center;
@@ -236,10 +237,5 @@ flex-direction: column;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.12px;
-}
-}
-@media(max-width:280px){
-.main-page__menu-container{
-    padding-top:46px;
 }
 }
