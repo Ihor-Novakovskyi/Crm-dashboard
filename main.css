@@ -1,0 +1,245 @@
+@import url('./table.css');
+
+body,
+h1,
+h2 {
+    margin: 0;
+    font-family: Poppins;
+}
+
+.main-page {
+    max-width: 1440px;
+    display: flex;
+    overflow: hidden;
+}
+
+/* content with table */
+.main-page__content {
+    flex-grow: 1;
+    display: flex;
+    transform: translateX(100%);
+    gap: 51px;
+    flex-direction: column;
+    padding: 128px 95px 258px 71px;
+    background: #FAFBFF;
+    transition: transform 1s linear;
+}
+
+.main-page__greetings {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* menu */
+.main-page__menu-container {
+    position: relative;
+    flex-basis: 306px;
+    display: flex;
+    transform: translateX(-100%);
+    gap: 52px;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 36px 28px;
+    transition: transform 1s linear;
+
+}
+
+
+.main-page__logo-container {
+
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+}
+/* .logo-image{
+width:;
+} */
+.logo-text{
+position: relative;
+color: #000;
+font-size: 26px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.26px;
+}
+
+.logo-text::after {
+position: absolute;
+content: 'v.01';
+color: #838383;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.1px;
+bottom:5px;
+right:-4px;
+transform: translateX(100%);
+}
+.main-page__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.main-page__menu-item {
+    display: flex;
+    height: 46px;
+
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    position: relative;
+    color: #9197B3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.14px;
+    /* padding: 0 40px; */
+    border-radius: 8px;
+    border: none;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-position: 11px center;
+}
+
+.main-page__menu-item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url('./assets/chevron-right_button_notactive.png');
+}
+.main-page__menu-item--dashboard{
+background-image: url('./assets/key-square1.png');
+
+}
+.main-page__menu-item--product{
+    background-image: url('./assets/3d-square\ 2.png');
+}
+.main-page__menu-item-customers{
+    background-image: url('./assets/user-square\ 3.png');
+}
+.main-page__menu-item--income{
+    background-image: url('./assets/wallet-money\ 4.png');
+}
+.main-page__menu-item--help{
+    background-image: url('./assets/discount-shape\ 5.png');
+}
+.main-page__menu-item--promote{
+    background-image: url('./assets/message-question\ 6.png');
+}
+.customers--active {
+    color: #fff;
+    background-color: #5932EA;
+}
+
+.customers--active:after {
+    background-image: url('./assets/chevron-right_button.png');
+}
+
+.user-logo{
+    position: absolute;
+    bottom:76px;
+    left: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.user-logo__info{
+display: flex;
+flex-direction: column;
+}
+.user-logo__name{
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.14px;
+}
+.user-logo__work-position{
+    color: #757575;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+}
+@media (max-width:900px){
+.main-page{
+    flex-direction: column;
+}
+.main-page__menu-container{
+    flex-direction: row;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:18px;
+}
+.main-page__logo-container{
+    justify-content: center;
+}
+.main-page__menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    
+.main-page__menu-item{
+font-size: 12px;
+flex-basis: 130px;
+flex-shrink: 0;
+background-position: 8px center;
+}
+.main-page__content{
+padding:8px;
+gap:18px;
+}
+
+.user-logo{
+    position: absolute;
+    top:8px;
+    left: 8px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: start;
+    gap: 12px;
+}
+.user-logo__info{
+display: flex;
+flex-direction: column;
+
+}
+.user-logo__name{
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.14px;
+}
+.user-logo__work-position{
+    color: #757575;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+}
+}
+@media(max-width:280px){
+.main-page__menu-container{
+    padding-top:46px;
+}
+}

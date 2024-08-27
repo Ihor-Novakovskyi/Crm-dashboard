@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="./main.css" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="main-page">
+			<div class="main-page__menu-container">
+				<div class="main-page__logo-container">
+					<img src="./assets/logo.png" alt="logo image" class="logo-image" />
+					<span class="logo-text"> Dashboard </span>
+				</div>
+				<div class="main-page__menu">
+					<button class="main-page__menu-item main-page__menu-item--dashboard">
+						Dashboard
+					</button>
+					<button class="main-page__menu-item main-page__menu-item--product">
+						Product
+					</button>
+					<button
+						class="main-page__menu-item main-page__menu-item-customers customers--active">
+						Customers
+					</button>
+					<button class="main-page__menu-item main-page__menu-item--income">
+						Income
+					</button>
+					<button class="main-page__menu-item main-page__menu-item--help">
+						Help
+					</button>
+					<button class="main-page__menu-item main-page__menu-item--promote">
+						Promote
+					</button>
+				</div>
+				<div class="main-page__user-logo user-logo">
+					<img src="./assets/user.svg" alt="" class="user-logo__image" />
+					<div class="user-logo__info">
+						<span class="user-logo__name"> Evano </span>
+						<span class="user-logo__work-position"> Project Manager </span>
+					</div>
+				</div>
+			</div>
+			<div class="main-page__content">
+				<h1 class="main-page__greetings">Hello Evano 👋🏼</h1>
+				<div class="dashboard">
+					<div class="dashboard__header">
+						<div class="header-wrapper">
+							<h2 class="dashboard__header-item1">All Customers</h2>
+							<span class="dashboard__header-item2"> Active Members </span>
+						</div>
+						<input type="text" placeholder="Search" class="dashboard__search" />
+					</div>
+					<table class="table">
+						<thead style="position: relative">
+							<tr>
+								<th scope="col">Customer Name</th>
+								<th scope="col">Company</th>
+								<th scope="col">Phone Number</th>
+								<th scope="col">Email</th>
+								<th scope="col">Country</th>
+								<th scope="col">Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">Jane Cooper</th>
+								<td>Microsoft</td>
+								<td>(225) 555-0118</td>
+								<td>jane@microsoft.com</td>
+								<td>United States</td>
+								<td>
+									<div
+										class="table__status-indicator table__status-indicator--active">
+										Active
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">Floyd Miles</th>
+								<td>Yahoo</td>
+								<td>(225) 555-0118</td>
+								<td>floyd@yahoo.com</td>
+								<td>Kiribati</td>
+								<td>
+									<div
+										class="table__status-indicator table__status-indicator--not-active">
+										Inactive
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">Ronald Richards</th>
+								<td>Adobe</td>
+								<td>(302) 555-0107</td>
+								<td>ronald@adobe.com</td>
+								<td>Israel</td>
+								<td>
+									<div
+										class="table__status-indicator table__status-indicator--not-active">
+										Inactive
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">Marvin McKinney</th>
+								<td>Tesla</td>
+								<td>(252) 555-0126</td>
+								<td>marvin@tesla.com</td>
+								<td>Iran</td>
+								<td>
+									<div
+										class="table__status-indicator table__status-indicator--active">
+										Active
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">Jerome Bell</th>
+								<td>Google</td>
+								<td>(629) 555-0129</td>
+								<td>jerome@google.com</td>
+								<td>Réunion</td>
+								<td>
+									<div
+										class="table__status-indicator table__status-indicator--active">
+										Active
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">Kathryn Murphy</th>
+								<td>Microsoft</td>
+								<td>(406) 555-0120</td>
+								<td>kathryn@microsoft.com</td>
+								<td>Curaçao</td>
+								<td>
+									<div
+										class="table__status-indicator table__status-indicator--active">
+										Active
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">Jacob Jones</th>
+								<td>Yahoo</td>
+								<td>(208) 555-0112</td>
+								<td>jacob@yahoo.com</td>
+								<td>Brazil</td>
+								<td>
+									<div
+										class="table__status-indicator table__status-indicator--active">
+										Active
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">Kristin Watson</th>
+								<td>Facebook</td>
+								<td>(704) 555-0127</td>
+								<td>kristin@facebook.com</td>
+								<td>Åland Islands</td>
+								<td>
+									<div
+										class="table__status-indicator table__status-indicator--not-active">
+										Inactive
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="dashboard__pagination-container">
+						<span class="dashboard__pagination-item-text">
+							Showing data 1 to 8 of 256K entries
+						</span>
+						<div class="dashboard__pagination-items">
+							<button
+								class="dashboard__pagination-item dashboard__pagination-item--prev"></button>
+							<button
+								class="dashboard__pagination-item dashboard__pagination-item-number dashboard__pagination-item--active">
+								1
+							</button>
+							<button
+								class="dashboard__pagination-item dashboard__pagination-item-number">
+								2
+							</button>
+							<button
+								class="dashboard__pagination-item dashboard__pagination-item-number">
+								3
+							</button>
+							<button
+								class="dashboard__pagination-item dashboard__pagination-item-number">
+								4
+							</button>
+							<span class="dashboard__pagination-item-dots">...</span>
+							<button
+								class="dashboard__pagination-item dashboard__pagination-item-number">
+								40
+							</button>
+							<button
+								class="dashboard__pagination-item dashboard__pagination-item--next"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./index.js"></script>
+</html>
